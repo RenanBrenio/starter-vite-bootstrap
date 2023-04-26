@@ -1,3 +1,3 @@
-# Supersonic Starter LP
+# Starter Vite Bootstrap
 
-Boilerplate inicial para o desenvolvimento de LPs.
+Boilerplate inicial para o desenvolvimento de Landing Pages utilizando Vite e Boostrap, documentação em breve.

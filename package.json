@@ -1,6 +1,6 @@
 {
   "name": "starter-vite-bootstrap",
-  "description": "Boilerplate for landing pages developed by Supersonic's awesome dev team",
+  "description": "Boilerplate for landing pages using Vite and Bootstrap",
   "version": "0.0.1",
   "private": true,
   "scripts": {
