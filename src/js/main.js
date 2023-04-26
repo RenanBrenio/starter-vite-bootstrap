@@ -1,6 +1,6 @@
 import '../scss/frontend.scss'
 import { Fancybox } from "@fancyapps/ui"
-import * as bootstrap from 'bootstrap'
+import { Popover } from 'bootstrap';
 
 const svgs = import.meta.globEager('../svg/*.svg')
 
@@ -8,7 +8,7 @@ const svgs = import.meta.globEager('../svg/*.svg')
 document.querySelectorAll('[data-bs-toggle="popover"]')
   .forEach(popover => {
     new Popover(popover)
-  })
+})
 
 Fancybox.bind("[data-fancybox]", {
     // Your options go here
