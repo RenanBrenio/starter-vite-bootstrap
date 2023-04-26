@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start':
+                new Date().getTime(), event: 'gtm.js',
+      });
+      var f = d.getElementsByTagName(s)[0],
+              j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+              'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', '<%- gtm %>');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <meta name="description" content="<%- description %>">
+    <meta name="author" content="r3nan.dev">
+
+    <meta property="og:site_name" content="<%- og_site_name %>"/>
+    <meta property="og:title" content="<%- og_title %>"/>
+    <meta property="og:description" content="<%- og_description %>">
+    <meta property="og:image" itemprop="image" content="<%- base_url %>/images/logo-thumb.jpg"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="256">
+    <meta property="og:image:height" content="256">
+    <meta property="og:url" content="<%- base_url %>"/>
+
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=<%- gtm %>"
+              height="0"
+              width="0"
+              style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header class="header sticky-header">
+      <nav class="navbar navbar-expand-md bg-white">
+        <div class="container">
+          <a href="/html"
+             class="navbar-brand"
+             title="{{ config('app.name') }}">
+            <svg role="img">
+              <use xlink:href="#supersonic-logo" />
+            </svg>
+          </a>
+          <div class="offcanvas offcanvas-end align-items-md-end"
+               tabindex="-1"
+               id="offcanvasNavbar"
+               aria-hidden="true"
+               aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-body">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="/html" class="nav-link active">
+                    Home
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="/html/quem-somos" class="nav-link">
+                    Quem somos
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle"
+                     href="#"
+                     id="navbarDropdown"
+                     role="button"
+                     data-bs-toggle="dropdown"
+                     data-bs-auto-close="outside"
+                     aria-expanded="false">
+                    Produtos
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="/html/contato" class="nav-link">
+                    Contato
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button class="navbar-toggler"
+                  type="button"
+                  title="Menu"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                  aria-label="Menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="py-block py-md-block-large text-center min-vh-100 bg-translucent text-white">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <h1>
+                Starter LP funcionou
+              </h1>
+              <a href="/images/favicon.ico" data-fancybox>fancybox</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-block py-md-block-large text-center min-vh-100">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <h1>
+                Starter LP funcionou
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

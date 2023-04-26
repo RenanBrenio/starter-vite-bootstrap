@@ -1,0 +1,13 @@
+textarea {
+  resize: vertical;
+  max-height: 6rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  outline: none !important;
+  transition: $transition-base;
+}
